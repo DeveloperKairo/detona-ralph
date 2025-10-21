@@ -16,15 +16,15 @@
     <div class="menu">
       <div class="menu-time">
         <h2 class="red">Time Left</h2>
-        <h2>0</h2>
+        <h2 id="timeleft">0</h2>
       </div>
       <div class="menu-score">
         <h2 class="red">Your Score</h2>
-        <h2>0</h2>
+        <h2 id="score">0</h2>
       </div>
       <div class="menu-lives">
         <img src="./assets/images/player.png" alt="player photo">
-        <h2>x3</h2>
+        <h2 id="lives">x3</h2>
       </div>
     </div>
 
@@ -43,6 +43,14 @@
         <div class="square" id="7"></div>
         <div class="square" id="8"></div>
         <div class="square" id="9"></div>
+      </div>
+    </div>
+
+    <div id="gameover-modal" class="modal hidden">
+      <div class="modal-content">
+        <h2>GAME OVER!</h2>
+        <p id="final-score">Seu resultado foi: 0</p>
+        <button id="btn-restart">Jogar Novamente</button>
       </div>
     </div>
   </main>
