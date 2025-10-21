@@ -2,9 +2,12 @@
 
 main{
   display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url("../images/wall.png");
 }
 
-.menu{
+.menu {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -12,9 +15,42 @@ main{
   width: 100%;
   background-color: #000000;
   color: #ffffff;
+  border-bottom: 5px solid #ffd700;
 }
 
 .red{
   color: rgb(199, 2, 2);
 }
 
+.panel{
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.square{
+  height: 200px;
+  width: 200px;
+  border: 1px solid #000000;
+  background-color: #21a579;
+}
+
+.enemy{
+  background-image: url("../images/ralph.png");
+  background-size: cover;
+}
+
+.menu-lives{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  height: 60px;
+}
+
+.menu-time h2:nth-child(2), .menu-score h2:nth-child(2) {
+  margin-top: 10px;
+}
